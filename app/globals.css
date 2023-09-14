@@ -97,3 +97,24 @@ html {
 .profile-name {
   @apply mt-4 text-gray-100 text-2xl text-center group-hover:text-white;
 }
+
+/* Navigation Bar */
+.nav-container {
+  @apply px-4 md:px-16 py-6 flex flex-row items-center transition duration-500;
+}
+
+.nav-links {
+  @apply flex-row ml-8 gap-7 hidden lg:flex;
+}
+
+.nav-links_mobile {
+  @apply lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative;
+}
+
+.nav-item {
+  @apply text-white cursor-pointer hover:text-gray-100 transition;
+}
+
+.nav-mobile-item {
+  @apply bg-black w-56 absolute top-8 left-0 py-5 flex-col border-2 border-gray-100 flex;
+}
